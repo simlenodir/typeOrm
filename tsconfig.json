@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "strict": true,
-    "module": "commonjs",
+    "module": "CommonJS",
     "target": "ESNEXT",
     "allowJs": true,
     "allowSyntheticDefaultImports": true,

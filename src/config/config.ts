@@ -1,12 +1,16 @@
 import { DataSource } from "typeorm";
+import path from "path";
 
-const typeOrm = new DataSource({
+export default new DataSource({
     "type": "postgres",
     "host": "localhost",
     "port": 5432,
     "username": "postgres",
     "password": "nodir",
-    "database": "n37",
-    "entities": [],
-    "logging": true
+    "database": "n33",
+    "entities": [
+        path.join(__dirname, '..', 'entitys', '*.entitys.{ts,js}')
+    ],
+    "logging": true,
+    "synchronize": true
 })
